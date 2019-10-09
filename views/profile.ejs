@@ -1,0 +1,11 @@
+<% include partials/header %>
+<div id="content">
+    <% var x = `https://ui-avatars.com/api/?name=${fullName[0]}+${fullName[1]}&size=512&rounded=true` %>
+    <% var y = `${fullName[0]} ${fullName[1]}` %>
+    <img class="circle blue" src="<%= x %>">
+    <h1><%= SID %></h1>
+    <h1><%= y %></h1>
+    <button id="hello">FEEDBACK</button>
+</div>
+<script src="/script.js"></script>
+<% include partials/footer %>
